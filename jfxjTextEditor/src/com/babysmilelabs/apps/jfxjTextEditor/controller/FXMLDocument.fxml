@@ -6,9 +6,91 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.babysmilelabs.apps.jfxjTextEditor.controller.FXMLDocumentController">
-    <children>
-        <Button layoutX="126" layoutY="90" text="Click Me!" onAction="#handleButtonAction" fx:id="button" />
-        <Label layoutX="126" layoutY="120" minHeight="16" minWidth="69" fx:id="label" />
-    </children>
+<AnchorPane id="AnchorPane" prefHeight="554.0" prefWidth="689.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.babysmilelabs.apps.jfxjTextEditor.controller.FXMLDocumentController">
+  <children>
+    <BorderPane prefHeight="554.0" prefWidth="689.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <bottom>
+        <ToolBar>
+          <items>
+            <ProgressBar prefWidth="200.0" progress="0.0" />
+          </items>
+        </ToolBar>
+      </bottom>
+      <center>
+        <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
+          <tabs>
+            <Tab text="jfxjTextFile_01.txt">
+              <content>
+                <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <children>
+                    <BorderPane prefHeight="479.0" prefWidth="689.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                      <center>
+                        <TextArea prefWidth="200.0" wrapText="true" />
+                      </center>
+                      <left>
+                        <TextArea prefHeight="479.0" prefWidth="80.0" wrapText="true" />
+                      </left>
+                      <right>
+                        <ToolBar orientation="VERTICAL">
+                          <items>
+                            <Button mnemonicParsing="false" text="Re" />
+                            <Button mnemonicParsing="false" text="Av" />
+                          </items>
+                        </ToolBar>
+                      </right>
+                    </BorderPane>
+                  </children>
+                </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="jfxjTextFile_02.txt">
+              <content>
+                <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <children>
+                    <BorderPane prefHeight="479.0" prefWidth="689.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                      <center>
+                        <TextArea prefWidth="200.0" wrapText="true" />
+                      </center>
+                      <left>
+                        <TextArea prefHeight="479.0" prefWidth="80.0" wrapText="true" />
+                      </left>
+                      <right>
+                        <ToolBar orientation="VERTICAL">
+                          <items>
+                            <Button mnemonicParsing="false" text="Re" />
+                            <Button mnemonicParsing="false" text="Av" />
+                          </items>
+                        </ToolBar>
+                      </right>
+                    </BorderPane>
+                  </children>
+                </AnchorPane>
+              </content>
+            </Tab>
+          </tabs>
+        </TabPane>
+      </center>
+      <top>
+        <MenuBar>
+          <menus>
+            <Menu mnemonicParsing="false" text="File">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Close" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Delete" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+              <items>
+                <MenuItem mnemonicParsing="false" text="About" />
+              </items>
+            </Menu>
+          </menus>
+        </MenuBar>
+      </top>
+    </BorderPane>
+  </children>
 </AnchorPane>
